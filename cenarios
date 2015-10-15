@@ -1,0 +1,48 @@
+Documento Executável seuindo a estrutura proposta pelo BDD
+
+USER STORY:
+COMO: Empresa de Bingos 
+DESEJO: realizar sorteio de acordo com as regras da CEF para jogos de azar
+PARA: que me sistema seja homologado
+
+
+# CENARIO: A quantidade de elementos possiveis e correta
+# GIVEN: Um numero desejado de elementos
+# WHEN: Geramos o conjunto populado
+# THEN: O tamanho desse conjunto gerado e igual ao entrado
+
+# CENARIO: O conjunto de elementos nao tem repeticoes
+# GIVEN: Um conjunto de elementos
+# WHEN: Comparo esses numeros entre si
+# THEN: Entao esses numeros nunca terao nenhum igual a si
+
+# CENARIO: O resultado de um sorteio é um número inteiro
+# GIVEN: Um conjunto de elementos
+# WHEN: Um elemento é sorteado
+# THEN: Esse elemento é um número inteiro
+
+# CENARIO: Ao Sortear numero, o conjunto restante deve diminuir
+# GIVEN: Um conjunto de elementos de tamanho N
+# WHEN: Um elemento e sorteado
+# THEN: O tamanho final sera 1 elemento a menos que o inicial
+
+# CENARIO: Um elemento sorteado nao pode ser sorteado novamente
+# GIVEN: Um conjunto de elementos nao vazio
+# WHEN: Um elemento e sorteado
+# THEN: Esse elemento sorteado nao pode estar mais no conjunto inicial
+
+# CENARIO: Um Elemento sorteado deve estar no conjunto de elementos sorteados
+# GIVEN: Um conjunto de elementos
+# WHEN: Um elemento e sorteado
+# THEN: Este elemento deve constar no conjunto de elementos sorteados
+
+# CENARIO: Um elemento nunca estara duplicado no conjunto de elementos sorteados
+# GIVEN: Um conjunto de elementos
+# WHEN: Um elemento e sorteado
+# THEN: Esse elemento so ocorre uma vez no conjunto de elementos sorteados
+
+
+
+
+
+
