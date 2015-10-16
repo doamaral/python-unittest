@@ -24,5 +24,4 @@ class Jogo:
         return card
 
     def check_sorted_num(self, sorted, card):
-        if sorted in card:
-            print("Tem!")
+        return sorted in card
