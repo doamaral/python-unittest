@@ -1,4 +1,3 @@
-__author__ = 'Lucas Amaral'
 import random
 
 class Jogo:
