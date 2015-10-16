@@ -1,5 +1,6 @@
 import random
 
+
 class Jogo:
 
     def __init__(self, tam=10):
@@ -24,5 +25,4 @@ class Jogo:
         return card
 
     def check_sorted_num(self, sorted, card):
-        if sorted in card:
-            print("Tem!")
+        return sorted in card
