@@ -12,3 +12,35 @@ class Jogo:
         num = random.randint(0,len(self.available_num)-1)
         self.picked_num.append(self.available_num[num])
         return self.available_num.pop(num)
+
+    def create_card(self):
+        card = []
+        count = 0
+        while count < 9:
+            num = random.randint(0,len(self.available_num))
+            if num not in card:
+                card.append(num)
+                count += 1
+        return card
+
+    def check_sorted_num(self, sorted, card):
+        if sorted in card:
+            print("Tem!")
+
+p = Jogo(80)
+
+sorteio = p.sort_num()
+print(sorteio)
+
+joao = p.create_card()
+p.check_sorted_num(sorteio, joao)
+
+pedro = p.create_card()
+p.check_sorted_num(sorteio, joao)
+
+joaquim = p.create_card()
+p.check_sorted_num(sorteio, joao)
+
+print(joao)
+print(pedro)
+print(joaquim)
